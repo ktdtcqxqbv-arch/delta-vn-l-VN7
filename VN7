@@ -1,48 +1,31 @@
--- Delta Vietnam VN7 Configuration
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/76538/VN7-Library/main/Source.lua"))() -- مكتبة الواجهة
-
-local Window = Library:CreateWindow({
-    Name = "🇻🇳 VN7 DELTA VIETNAM 🇻🇳",
-    LoadingTitle = "Delta vn | vn7 System",
-    LoadingSubtitle = "by VN7 Team",
-    ConfigurationSaving = {
-        Enabled = true,
-        FolderName = "VN7_Config",
-        FileName = "VN7_Delta"
-    }
-})
-
--- إشعار عند الدخول (Notification)
-Library:Notify({
-    Title = "VN7 System Loaded",
-    Content = "Welcome back! Discord: discord.gg/haX59nFsM",
-    Duration = 5
-})
-
--- تبويب الحقوق والديسكورد
-local MainTab = Window:CreateTab("Home 🏠", 4483362458) 
-
-MainTab:CreateSection("Info")
-
-MainTab:CreateLabel("Current Version: VN7 - V1")
-MainTab:CreateLabel("Support: discord.gg/haX59nFsM")
-
-MainTab:CreateButton({
-    Name = "Copy Discord Link",
-    Callback = function()
-        setclipboard("https://discord.gg/haX59nFsM")
-        Library:Notify({Title = "Copied!", Content = "Link copied to clipboard", Duration = 3})
-    end,
-})
-
--- قسم تشغيل السكربتات (Script Hub)
-local ScriptsTab = Window:CreateTab("Scripts ⚡", 4483362458)
-ScriptsTab:CreateSection("Executor VN7")
-
-ScriptsTab:CreateButton({
-    Name = "Run Universal Script",
-    Callback = function()
-        -- هنا تضع السكربت الذي تريد تشغيله
-        print("VN7 Script Executed!")
-    end,
-})
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>items</key>
+    <array>
+        <dict>
+            <key>assets</key>
+            <array>
+                <dict>
+                    <key>kind</key>
+                    <string>software-package</string>
+                    <key>url</key>
+                    <string>رابط_ملف_الـ_IPA_المباشر_هنا</string>
+                </dict>
+            </array>
+            <key>metadata</key>
+            <dict>
+                <key>bundle-identifier</key>
+                <string>com.delta.vn7</string>
+                <key>bundle-version</key>
+                <string>1.0</string>
+                <key>kind</key>
+                <string>software</string>
+                <key>title</key>
+                <string>Roblox Delta VN7</string>
+            </dict>
+        </dict>
+    </array>
+</dict>
+</plist>
